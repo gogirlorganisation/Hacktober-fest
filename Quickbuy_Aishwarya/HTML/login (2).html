@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login</title>
+	<style type="text/css">
+
+
+* {box-sizing: border-box;
+
+}
+
+/* Add padding to containers */
+.container {
+    display: block;
+  padding: 16px;
+  font-color:green;
+  font-family: arial;
+}
+/*fieldset*/
+fieldset{
+    display:inline-block;
+    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 70%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  font-family: arial;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+  border: 3px solid #555;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/* Set a style for the submit/register button */
+.registerbtn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 70%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+
+/* Add a blue text color to links */
+a {
+  color: dodgerblue;
+}
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+form{
+    display: inline-block;
+    text-align:center;
+		margin-top: 30px;
+    margin-left: 600px;
+    background-color: white;
+
+}
+h1{
+    font-family: Verdana;
+    display:inline-block;
+    position: absolute;
+    left:100px;
+    right:100px
+    font-color: #dfebed;
+    margin-top: 3px;
+
+}
+body{
+    background: url(https://i.pinimg.com/474x/d4/35/9b/d4359b9d9bd2464a2dd42f43617dbb57.jpg);
+    height:800px;
+    background-size: cover;
+    background-position: center;
+    margin:auto;
+}
+
+    </style>
+</head>
+<body>
+	<form style="margin-top:70px;">
+    <fieldset>
+    <div class="container">
+    <h2>Register</h2>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label><br>
+    <input type="text" placeholder="Enter Email" name="email" required><br>
+
+    <label for="psw"><b>Password</b></label><br>
+    <input type="password" placeholder="Enter Password" name="psw" required><br>
+
+    <label for="psw-repeat"><b>Repeat Password</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" required><br>
+    <hr>
+    </div>
+    <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+    <button onclick="location.href='index.html'" type="submit" class="registerbtn" >Register</button>
+
+  <div class="container signin">
+    <p>Already have an account? <a href="./HTML/index.html">Sign in</a>.</p>
+  </div>
+  </fieldset>
+</form>
+</body>
+</html>
